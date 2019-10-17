@@ -1,0 +1,776 @@
+<html><head>
+   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body>
+	
+   <h1>
+   CS091M4041H: Algorithm Design and Analysis -- Fall 2019
+   </h1>
+	
+   <h2>
+   Course Information
+   </h2>
+	
+   <ul>
+	
+   <li>
+   <em> Staff </em>
+   <br>
+   Instructor: 
+   <br>
+   <a href="http://www.bioinfo.org.cn/%7Edbu/"> Dongbo Bu</a> 
+   <br>
+   Email: <a href="mailto:dbu@ict.ac.cn"> dbu AT ict.ac.cn </a>
+   <br>
+   Location: Room 844, ICT Building,
+   <br>
+   Tel: 62600844
+   <br>
+	
+   <br>
+   <br>
+   TAs: 
+Junchuan Dong, 
+Zeshun Tan,
+Hui Wang, 
+Meiji Hou, 
+Mingai Dang, 
+Zhenxin Ding, 
+Jingyan Sui, 
+Fusong Ju,
+Bin Huang,
+Weiyi Pan
+   <br>
+
+   Email: <a href="mailto:TAGC@ict.ac.cn"> TA of alGorithm Courses </a>
+   <br>
+   Location: 0817, ICT Building,
+   <br>
+   Tel: 62600887
+   <br>
+   Office Hours: 3:00pm-6:00pm, Wednesday
+   </li>
+   
+   <br> 
+   <br> 
+	<html><head>
+   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body>
+	
+	
+   <li>
+   	<em> Textbooks (recommended, not required): </em>
+
+   <br>
+   * T.H. Cormen, C.E. Leiserson, R. Rivest, and C. Stein, <a href="http://www.amazon.com/dp/0262033844"> Introduction to algorithms (2nd ed.), MIT Press, 2001. </a>  Widely available. 
+   <br>
+   * J. Kleinberg and E. Tardos. <a href="http://www.amazon.com/dp/0321295358"> Algorithm Design, Addison-Wesley, 2005. </a>
+
+   <br>
+   * R. Motwani and P. Raghavan, <a href="http://www.amazon.com/dp/0521474655"> Randomized Algorithms. Cambridge U. Press, 1995 </a>
+
+   <br>
+   * Christos H. Papadimitriou, Kenneth Steiglitz, Kenneth Steiglitz. 
+   <a href="http://www.amazon.com/dp/0486402584"> Combinatorial Optimization: Algorithms And Complexity. Courier Dover Publications, 1998 </a>
+
+   <br> 
+   * Ding-Zhu Du, Ker-I Ko, Xiaodong Hu. <a href="http://www.amazon.com/dp/1461417007">  Design and analysis of approximation algorithms. Springer, 2012 </a>
+
+   <br> 
+	* Daming Zhu, Shaohan Ma. <a href="http://www.amazon.cn/dp/product-description/B001U39IEA"> Algorithm design and analysis. High Education Press, 2009. </a> 
+
+ <br>
+	 <br>
+
+   <em> Other reading material: </em> 
+	
+   <br> 
+	* Udi Manber, Introduction to Algorithms: A Creative Approach.
+   <br>
+   * M. Mitzenmacher and E. Upfal, Probability and Computer. Cambridge U. Press, 2005.  <br>
+   * M. R. Garey and D. S. Johnson.  Computers and Intractability: A Guide 
+   to the Theory of NP-Completeness.  W.H. Freeman, New York, 1979.  <br>
+   </li>
+	
+      <br>
+   <li>
+   <em>Goals</em>: <br>
+   * to master the ability to extract mathematically clean core of a problem, <br>
+   * then identify an appropriate algorithm design technique based on the problem structure observations, <br>
+   * and analyze algorithm performance. <br>
+   </li>
+	
+   <br>
+   <li>
+   <em>Prerequisites</em>: <br>
+   We will assume knowledge of: <br>
+      * Basic data structures such as lists, trees, heaps, sorting and searching <br>    
+      * Basic discrete mathematics such as proofs by mathematical induction; <br>
+      * Computability and programming experience; <br>
+   </li>
+	
+   <br>
+   <li>
+   <em>Topics</em>: <br>
+   We will cover the following topics if time permits.  <br>
+   * Problem hardness, NP-completeness; <br>
+   * Algorithm analysis techniques, including worst-case and average-case, amortized, randomization, and competitive; <br>
+   *  Basic algorithm techniques, including greedy, iteration, 
+   divide-and-conquer, dynamic programming, network flow, linear 
+   programming; <br>
+   *  Algorithm techniques for hard problems, including approximation 
+   algorithms, local search, primal-dual algorithms, linear programming; <br> 
+   * Randomized algorithms: basic techniques from discrete probability, and applications to optimization.  <br>
+   * Specific problems from  computational biology and Bioinformatics (if time permits).<br>
+   </li>
+   </ul>
+	
+   <h2> Grading policies </h2> <br>
+   8 assignments and final examination.  
+	
+   <h2>Weekly Schedule</h2>
+   The week number is an active link -- each week has its own page that 
+   includes required reading, recommended reading, assignment (if any), 
+   teaching assistants, etc.  (Topics for weeks beyond the current and next
+   are always tentative.)
+
+   <ul>
+   <li> Week 1,2,3: Introduction to algorithm and basic design techniques
+	
+   	<ul>
+	   <li>
+	   Lecture 1: Introduction to algorithm: some representative problems;
+	   <br> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1.pdf"> Lec1.pdf </a>; 
+       <!---     a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1-regularexpressionproblem.doc">Lec1-regular-expression-problem</a>;  -->
+	   <!---a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/demo-Gale-Shapley-algorithm.ppt"> demo of Gale-Shapley algorithm (by K. Wayne)</a> --------------------------------------------------------------------------->
+	   </li>
+
+      <li>
+   Lecture 3: Divide-and-conquer technique, and the combination with randomization;
+      <br> 
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5.pdf"> Lec5.pdf </a>; 
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-FFT.pdf"> Lec5-FFT.pdf </a>; 
+	  <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-demo-merge.ppt"> demo merge (by K. Wayne) </a>; <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-demo-merge-inversion.ppt"> demo merge inversion (by K. Wayne)</a>  
+      <a href="http://www.cs.armstrong.edu/liang/animation/web/QuickSortPartition.html"> demo of QuickSort partition (by Y. Danial Liang) </a>; 
+      <br>
+      </li>
+
+	   <br>
+	   <li> Reading material: 
+			<ul> 
+					<li> Chapter 1 of Algorithm design, </li>
+					<li> Chapter 17 of Introduction to Algorithms, </li>
+					<li> Lecture 8, 9 of The Design and Analysis of Algorithms,  </li> 
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1-LinearRecurrenceEquations-Bazzi1998.pdf"> On the solution of linear recurrence equations (by Mohamad Akra and Louay Bazzi, 1998) </a>, </li>
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1-Stable-Matching-Gale-Shapley1962.pdf"> College Admissions and the Stability of Marriage (by Gale and Shapley, 1962) </a>, </li>
+					<li> <a href="http://www.nobelprize.org/nobel_prizes/economics/laureates/2012/advanced-economicsciences2012.pdf"> STABLE ALLOCATIONS AND THE PRACTICE OF MARKET DESIGN (compiled by the Economic Sciences Prize Committee of the Royal Swedish Academy of Sciences, 2012) </a>, </li>
+					<li> <a href="http://www.nobelprize.org/nobel_prizes/economics/laureates/2012/popular-economicsciences2012.pdf"> Stable matching: Theory, evidence, and practical design (INFORMATION FOR THE PUBLIC, The Nobel prize in economic sciences, 2012) </a>, </li>
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1-Who-Is-Interested-in-Algorithms-Skiena1999.pdf"> Who is Interested in Algorithms and Why? Lessons from the Stony Brook Algorithms Repository (by Steven S. Skiena, 1999)  </a>, </li>
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec1-TSP-Lin-Kernighan1971.pdf"> An Effective Heuristic Algorithm for the Traveling-Salesman Problem (by S. Lin and B. W. Kernighan, 1971) </a>, </li>
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Huang-Inverse-Order-PNAS2014.pdf"> Gene coexpression measures in large heterogeneous
+					samples using count statistics (by Y. Wang, M. S. Waterman, and H. Huang, 2014)  </a>, </li>
+			<li> Chapter 2,15,16,7,33.4 of Introduction to Algorithms, </li>
+			<li> Chapter 5,4,6 of Algorithm design, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec5-Matrix-Multiplication-Duality-Hopcroft1973.pdf"> Duality applied to the complexity of matrix multiplications and other bilinear forms (by J. Hopcroft, and J. Musinski, 1973) </a>, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec5-Matrix-Multiplication-Coppersmith-Winograd-by-Anderson-Barman2009.pdf"> The Coppersmith-Winograd matrix multiplication algorithm (by M. Anderson and S. Barman, 2009) </a>, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec5-solving-recurrence-Lueker1980.pdf"> Some techniques for solving recurrences  (by George S. Lueker, 1980) </a>  </li>
+			<li> <a href="http://ozark.hendrix.edu/~burch/proj/karat/"> Karatsuba algorithm vs. grade-school method: experimental results (by Carl Burch) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Fast-Division-Hasselstrom2003.pdf"> Fast Division of Large Integers --- A comparison of Algorithms (by Karl Hasselstrom, 2003) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-QuickSort-Hoare1962.pdf"> Quicksort (by C. A. R. Hoare, 1962) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Selection-Floyd-Rivest-1973.pdf"> Time bounds for selection  (by Manual Blum, Robert W. Floyd, Vaughan Pratt, Ronald Rivest, and Robert E. Tarjan, 1973) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Selection-Floyd-Rivest-1973.pdf"> Expected time bounds for selection  (by Robert W. Floyd, Ronald L. Rivest, 1973) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Closest-Pair-ShamosThesis1978.pdf"> Ph. D. thesis of Michael Ian Shamos (Section 6.2: Closest-Point Problems)  </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Counting-Cycles-in-Graph-Alon1994.pdf"> Finding and counting given length cycles (by Noga Alon, Raphael Yuster, and Uri Zwick, 1994)  </a> </li> 
+			<li> <a href="http://www.ics.uci.edu/~eppstein/projects/pairs/Applications/"> Closet Pair Data Structure: Applications (by David Eppstein) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Dynamic-Minimum-Spanning-Tree-Eppstein1995.pdf"> Dynamic Euclidean Minimum Spanning Trees and Extrema of Binary Functions (by David Eppstein, 1995) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Dynamic-Closest-Pairs-Eppstein1998.pdf"> Fast Hierarchical Clustering and Other Applications of Dynamic Closest Pairs (by David Eppstein, 1998) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-FFT-Moler2008.pdf"> Fourier analysis (by Cleve Moler) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Master-Theorem-Bentley1980.pdf"> A general method for solving divide-and-conquer recurrences (by J. L. Bentley, D. Haken, J. B. Saxe, 1980) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Fast-Multiplication-Karatsuba1995.pdf"> The complexity of computations (by A. A. Karatsuba, 1995) </a>, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Dynamic-Sorting-and-Selection-Upfal2011.pdf"> Sorting and selection on dymamic data (by Aris Anagnostopoulos, et al, 2011) </a>, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec5-Matrix-Multiplication-Strassen1969.pdf"> Gaussian eliminination is not optimal (by V. Strassen, 1969) </a>  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Matrix-Multiplication-Coppersmith-Winograd1990.pdf"> Matrix multiplication via arithmetic progressions (by Don Coppersmith, Shmuel Winograd, 1990) </a>, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec5-Huang-Inverse-Order-PNAS2014.pdf"> Gene coexpression measures in large heterogeneous samples using count statistics (by Y. X. Rachel Wang, Michael S. Watewrman, and Haiyan Huang, 2014) </a>, </li>
+
+				</ul>
+		</li>
+	   </li>
+		<!--li>
+	   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment1.pdf"></a>
+		</li>
+      <li>
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment2.tgz"></a> 
+      </li-->
+       </ul>
+   </li>
+	
+	
+ <p>	
+   <li> 
+   	Week 3, 4, 5: More on basic algorithm design techniques;
+      <ul>
+      <li>
+      Lecture 4: Dynamic programming technique;
+      <br> 
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec6.pdf"> Lec6.pdf </a>; 
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec6-HMM.pdf"> Lec6-HMM.pdf </a>; 
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec6-RNA.ppt"> RNA secondary structure prediction (by Sarah Aerni) </a>; <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec6-EditDistance.pdf"> Edit distance (by Andrew McCallum)</a>; 
+      <br>
+      </li>
+	
+      	<li> 
+		Reading material:  
+			<ul>
+				<li> Chapter 2,15,16,7,33.4 of Introduction to Algorithms, </li> 
+				<li> Chapter 5,4,6 of Algorithm design, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Matrix-Chain-Products-Godbole1973.pdf"> On Efficient Computation of Matrix Chain Products (by S. S. Godbole, 1973) </a> </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Matrix-Chain-Products-Hu1981.pdf"> An O(n log n) algorithm for computation of matrix chain products (by T. C. Hu and M. T. Shing, 1981) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-Needleman-Wunsch1970.pdf"> A general method applicable to the search for similarities in the amino acid sequence of two proteins (by Saul B. Needleman, Christian D. Wunsch, 1970) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-Smith-Waterman1981.pdf"> Identification of Common Molecular Subsequences (by T.F.SMITH and M. S. WATERMAN, 1981) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-Statistical-Distribution-of-Similarity-Smith-Waterman-Burk1985.pdf"> The statistical distribution of nucleic acid similarities (by T.F.SMITH, M. S. WATERMAN, and C. Burks, 1985) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Similarity-Statistical-Significance-Waterman1994.pdf"> Esitmating statistical significance of sequence similarities (by M. S. WATERMAN, 1994) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-on-FPGA-Altera2007.pdf"> Implementation of the Smith-Waterman Algorithm on a Reconfigurable Supercomputing Platform (White paper by ALTERA, 2007) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-Hirschberg1975.pdf"> A linear space algorithm for computing maximal common subsequences (by D. S. Hirschberg, 1975) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Rapid-DP-Lipman1983.pdf"> Rapid similarity searches of nucleic acid and protein data bank (by W. J. Wilbur and D. J. Lipman, 1983) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Banded-DP-Fickett1984.pdf"> Fast optimal alignment (by James W. Ficket, 1984) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Banded-DP-Gilbrat2018.pdf"> A short note on dynamic programming in
+a band optimal alignment (by Jean-Francois Gilbrat, 2018) </a> </li>
+   				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Sequence-Alignment-BLAST-Altschul1990.pdf"> Basic Local Alignment Search Tool (by S. Altschul, et al. 1990) </a> </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-P-Value-JingZhang2007.pdf"> P-value calculation (by J. Zhang, 2007) </a> </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-PAM-Alexander2002.pdf"> PAM matrix for BLAST algorithm (by C. Alexander, 2002) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Shortest-Path-Bellman1958.pdf"> On a routing problem (by Richard Bellman, 1958) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-All-Pair-Shortest-Path.pdf"> All pair shorest path </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Advanced-DP.pdf"> Advanced dynamic programing</a> </li> 
+
+
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Shortest-Path-BirthOfDP-Dreyfus.pdf"> Richard Bellman on the birth of dynamic programming (by Stuart Dreyfus, 2002) </a> </li> 
+		<!--		<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Pisinger1995.pdf"> Algorithms for Knapsack problem (Ph. D. thesis of David Pisinger, 1995) </a> </li>  -->
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Knapsack-Horowitz1974.pdf"> Computing Partitions with Applications to the Knapsack problem (by E. Horowitz and S. Sahni, 1974) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Knapsack-Cryptosystem-Olyzko1994.pdf"> The rise and fall of Knapsack cryptosystems (by A. M. Olyzko, 1994) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-TSP-Held-Karp1962.pdf"> A dynamic programming approach to sequencing problems (by Michael Held and Richard M. Karp, 1962) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Knapsack-Problems-Kellerer2003.pdf"> Knapsack problems (by Hans Kellerer, Ulrich Pferschy, and David Pisinger, 2003) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec6-Knapsack-Public-Key-Cryptography-Clancy.pdf"> Publick-key cryptosystem (by Charles Clancy) </a> </li>
+			</ul>
+	</li> 
+	
+      <!--li>
+     <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment3.tgz"></a> 
+      </li-->
+      </ul>
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> 
+   Week 5, 6, 7: Still more on basic algorithm design techniques;
+      <ul>
+         <li>
+         Lecture 5: Greedy technique
+         <br> 
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec7.pdf"> Lec7.pdf </a>; 
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec7-demo-Dijkstra.pdf"> demo of Dijkstra's algorithm </a>; 
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec7-demo-intervalscheduling.ppt"> demo of Interval Scheduling algorithm (by K. Wayne)</a>,
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec7-Heap.pdf"> Lec7-Heap.pdf </a>; 
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec7-UnionFind.pdf"> Lec7-UnionFind.pdf </a>; 
+ <!--a href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/BinomialHeaps.pdf"> BinomialHeaps.pdf (by Kevin Wayne) </a>,
+ <a href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/FibonacciHeaps.pdf"> FibonacciHeaps.pdf (by Kevin Wayne) </a>,
+ <a href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/FibonacciHeaps.pdf"> FibonacciHeaps.pdf (by Kevin Wayne) </a>, -->
+ <a href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/DemoBinaryHeap.pdf"> DemoBinaryHeap.pdf (by Kevin Wayne) </a>,
+ <a href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/DemoHeapify.pdf"> DemoHeapify.pdf (by Kevin Wayne) </a>,
+        </li>
+
+	   <li>
+	   Lecture 2: Basic algorithm analysis techniques, worst-case, average-case, and amortized analysis;
+	   <br> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec2.pdf"> Lec2.pdf </a>, 
+ <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/demo-tableinsert.pdf">demo of TableInsert (by C. Leiserson)</a>,
+	   </li>
+	 
+      	<li> 
+		Reading material: 
+			<ul>
+				<li>  Chapter 2,15,16,7,33.4 of Introduction to Algorithms, </li>
+				<li> Chapter 5,4,6 of Algorithm design </li>
+					<li> <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f09/www/handouts/fibonacci-heaps.txt"> a note by Sleator </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Dijkstra1959.pdf"> A note on two problems in connexion with graphs (by E. W. Dijkstra, 1959) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Floyd1962.pdf"> Algorithm 97: Shortest path (by Robert W. Floyd, 1962) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Seidel2005.pdf">  Top-down analysis of path compression (by Raimund Seidel and Micha Sharir, 2005) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Union-Find-Hopcroft.pdf"> Set merging algorithms (by Hopcroft J. E., Ullman J. D., 1973)  </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Union-Find-Fischer.pdf"> Efficiency of equivalence algorithms (by M. Fischer, 1972)  </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Union-Find-Tarjan1975.pdf"> Efficiency of a good but not linear set union algorithm (by R. Tarjan, 1975)  </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Union-Find-Tarjan1984.pdf"> Worst-case analysis of set union algoritms (by R. Tarjan, 1984)  </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Warshall1962.pdf"> A theorem on Boolean matrics (by Stephen Warshall, 1962) </a> </li> 
+				<li> <a href="http://dl.acm.org/citation.cfm?doid=321992.321993"> Efficient algorithms for shortest paths in sparse networks (by Donald B. Johnson, 1977) </a> </li> 
+				<li> <a href="http://onlinelibrary.wiley.com/doi/10.1002/net.3230040204/abstract"> Disjoint paths in networks (by J. W. Suurballe, 1974) </a> </li> 
+				<li> <a href="http://conservancy.umn.edu/bitstream/107247/1/oh330ewd.pdf"> An interview with Edsger W. Dijkstra (Conducted by Philip L. Frana 2001) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Kruskal1955.pdf"> On the shortest spanning subtree of a graph and the traveling salesman problem (by Joseph B. Kruskal Jr., 1955) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Prim1957.pdf"> Shortest Connection Networks and Some Generalizations  (by Robert. C. Prim, 1957) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Shannon1948.pdf"> A Mathematical Theory of Communication (by C. E. Shannon, 1948) </a> </li> 
+				<li> <a href="http://www.ieeeghn.org/wiki/index.php/Oral-History:Claude_E._Shannon"> An interview with Claude Shannon (Conducted by Robert Price, 1982) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/InterviewFano.pdf"> An interview with Robert M. Fano (Conducted by Arthur L. Norberg, 1989) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Huffman1952.pdf"> A Method for the Construction of Minimum-Redundancy Codes (by DAVID A. HUFFMAN, 1952) </a> </li> 
+				<li> <a href="http://www.huffmancoding.com/my-uncle/scientific-american"> Profile: David A. Huffman Encoding the “Neatness” of Ones and Zeroes (by Gary Stix, 1991) </a> </li> 
+				<li> <a href="http://www.binaryessence.com/index.html"> Binary Essence: Various aspects of data compression  </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/FloydHeap1964.pdf"> Algorithm 245, TreeSort 3 (by Robert M. Floyd, 1964) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/DiscoveryHuffman.pdf"> Discovery of Huffman Codes (by Inna Pivkina, 2010) </a> </li> 
+				<li> <a href="http://www.cse.yorku.ca/~aaw/Sotirios/BinomialHeap.html"> Binomial Heap Script (by Sotirios Stergiopoulos, 2001) </a> </li> 
+				<li> <a href="http://www.cse.yorku.ca/~aaw/Jason/FibonacciHeapAnimation.html"> Fibonacci Heap Animation (by Jason Huang Hu and Wei Wang, 2003) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Oxley2003.pdf"> What is a matroid?  (by James Oxley, 2003) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Whitney1935.pdf"> On the abstract properties of linear dependence (by Hassler Whitney, 1935) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Whitney1932.pdf"> Non-separable and planar graphs (by Hassler Whitney, 1932) </a> </li> 
+				<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Edmonds1971.pdf"> Matroids and greedy algorithms(by Jack Edmonds, 1971) </a> </li> 
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Binomial-Heap-Vuillemin.pdf"> A Data Structure for Manipulating Priority Queues (by Jean Vuillemin, 1978) </a>,  </li>
+					<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Fibonacci-Heap-Tarjan.pdf"> Fibonacci heaps and their uses in improved network optimization algorithms (by M. Fredman and R. Tarjan, 1987) </a>, </li>
+					<li> <a href="http://www.hpl.hp.com/news/2004/oct_dec/tarjan.html"> Robert Tarjan --- the art of the algorihtms  (by Jamie Beckett, 2004) </a>, </li>
+					<li> <a href="http://www.cs.princeton.edu/~fiebrink/423/AmortizedAnalysisExplained_Fiebrink.pdf"> Amortized Analysis Explained (by Rebecca Fiebrink) </a> </li>
+			</ul>
+	</li>
+        <!--li>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment4.pdf"></a> 
+       	</li-->
+      </ul>
+   </li> 	
+	
+
+   <p>
+	
+   <li> 
+
+   <!---h1> <blink> <font color="red"> Class will be canceled this Friday (Nov. 16th, 2012) </font> </blink>  </h1 --> 
+
+   Week 8, 9: Linear programming
+      <ul>
+         <li>
+         Lecture 6: Linear programming: Simplex algorithm 
+         <br>
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8.pdf"> Lec8.pdf </a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Secretary-Problem.pdf"> Lec8-Secretary-Problem.pdf </a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Genome-Rearrangement-Problem.pdf"> Lec8-Genome-Rearrange-Problem.pdf </a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-simplex-cycling.pdf"> an example of cycling in simplex algorithm (given by E. M. L. Beale, 1955)</a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Klee-Minty-gnuplot.sh"> an example of Klee-Minty cube</a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Generate-Klee-Minty-1M-withnoise.py"> a script to generate Klee-Minty cube (with noise)</a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Generate-Klee-Minty-1M.py"> a script to generate Klee-Minty cube (without noise)</a>, 
+         <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-DIET.math"> the DIET problem (in.math format) </a>, 
+
+         </li>
+
+         <br>
+	
+         <li> 
+		Reading material: 
+			<ul>
+				<li> Chapter 29 of Introduction to Algorithms, Combinatorial optimization: algorithm and complexity. </li>
+				<li> <a href="http://www.orms-today.org/orms-8-05/dantzig.html"> The life and times of the father of linear programming (by Saul I. Gass) </a>, </li>
+				<li> <a href="http://www.phpsimplex.com/en/Dantzig_interview.htm"> An interview with George B. Dantzig: the farther of linear programming (Conducted by Watts, Griffis and McOuat, 1986) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Kantorovich1939.pdf"> Mathematical Methods of Organizing and Planning Production (by L. Kantorovich, 1939)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/TheFirstAlgorithmForLP.pdf"> The First Algorithm for Linear Programming: An Analysis of Kantorovich's Method (by C. van de Panne and F. Rahnama, 1985)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Koopmans1975.pdf"> CONCEPTS OF OPTIMALITY AND THEIR USES (Nobel memorial lecture, by T. Koopmans, 1975)  </a>, </li>
+				<li> <a href="http://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/1975/kantorovich-lecture.html"> Mathematics in Economics: Achievements, Difficulties, Perspectives (Nobel memorial lecture, by L. Kantorovich, 1975)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dantzig1990.pdf"> The diet problem (by George B. Dantzig, 1990)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Primal-Dual1956.pdf"> A primal-dual algorithm (by George B. Dantzig, L. R. Ford, D. R. Fulkerson 1956)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Stigler-DIET1945.pdf"> The cost of subsistence  (by George Stigler, 1945)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dantzig2002.pdf"> Linear programming (by George B. Dantzig, 2002)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dantzig1963-1.pdf"> Linear programming and extensions PART I (by George B. Dantzig, 1963)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dantzig1963-2.pdf"> Linear programming and extensions PART II (by George B. Dantzig, 1963)  </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/EllipsoidMethod.pdf"> Ellipsoid Method
+				(by Steffen Rebennack, 2008)  </a>, </li>
+				<li> <a href="http://www-math.mit.edu/~goemans/18433S09/ellipsoid.pdf">  Lecture notes on the ellipsoid algorithm (by Michel Goemans, 2009) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/ellipsoid-survey.pdf"> The Ellipsoid Method: A Survey 
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Primal-Dual-Interior-Point.pdf"> Primal-Dual methods for linear programming (by Philip E. GILL, Walter MURRAY, Dulce B. PONCELEON and Michael A. SAUNDERS, 1994) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Interior-Point-and-LP.pdf"> Interior point methods and linear programming (by Robert Robere, 2012) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/GMS1986.pdf"> ON PROJECTED NEWTON BARRIER METHODS FOR
+				LINEAR PROGRAMMING AND AN EQUIVALENCE TO
+				KARMARKAR'S PROJECTIVE METHOD (by Philip E. Gill, Walter MURRAY, Michael A. SAUNDERS, J.A. TOMLIN, Margaret H. WRIGHT, 1986) </a>, </li>
+				<li> <a href="http://download.springer.com/static/pdf/719/art%253A10.1007%252FBF02579150.pdf?auth66=1416910246_6682e1c321afe9718062076a70b422f2&ext=.pdf"> A new polynomial-time algorithm for linear programming (by N. Karmarkar, 1984) </a>, </li>
+
+				<li> <a href="http://www.bnikolic.co.uk/blog/cpp-khachiyan-min-cov-ellipsoid.html"> C++ implementation of Khachiya algorithm for the minimum enclosing (or covering) ellipsoid (by Bojan Nikolic) </a>, </li>
+				<li> <a href="http://www.cs.rutgers.edu/Khachiyan/"> In memoriam: Leonid Khachiyan </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-Klee-Minty.pdf"> Klee-Minty example (by H. Greenberg) </a>, </li>
+				<li> <a href="http://math.uww.edu/~mcfarlat/s-prob.htm"> Simplex examples  </a>,  </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec8-smoothedcomplexity.pdf"> Smoothed complexity (by D. Spielman and S. Teng) </a>, </li>
+				<li> <a href="http://arxiv.org/abs/cs/0111050"> Smoothed Analysis of Algorithms: Why the Simplex Algorithm Usually Takes Polynomial Time (by D. Spielman and S. Teng, 2001) </a>, </li>
+				<li> <a href="http://www.gnu.org/s/glpk/"> GLPK (GNU Linear Programming Kit </a> </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Karmarkar1984.pdf"> A new polynomial-time algorithm for linear programming (by N. Karmarkar, 1984) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Wright2004.pdf"> The interior-point revolution in optimization: history, recent developments, and lasting consequences (by Margaret H. Wright, 2004) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Why-a-pure-primal-newton-barrier-step-may-be-infeasible.pdf"> Why a pure primal Newton barrier step may be infeasible? (by Margaret H. Wright, 1995) </a>, </li>
+				<li> <a href="http://www.springer.com/us/book/9780387303031"> Numerical Optimization (by Nocedal, Jorge, Wright, S., 2006) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Avis.pdf"> Solving Inequalities and Proving Farkas’s Lemma Made Easy (by David Avis and Bohdan Kaluzny) </a>, </li>
+			</ul>
+	 </li>
+	 <!--li> 
+	 </li--> 
+
+      </ul>
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> Week 10, 11: Linear programming (cont'd)
+   <ul>
+   	<li>
+   		Lecture 9: Linear programming: duality;
+   	<br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec9.pdf"> Lec9.pdf </a>, 
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec9-Lagrangian-dual.gnuplot.script"> A gnuplot script to illustrate Lagrangian dual </a>, 
+   <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec9-DIET.math"> Lec9-DIET.math </a>, 
+   <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec9-DIETDual.math"> Lec9-DIET-Dual.math </a>, 
+   <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec9-DIETb1.math"> Lec9-DIET-b1-2001.math </a>, 
+   <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec9-DIETb2.math"> Lec9-DIET-b2-56.math </a>, 
+   <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Lec9-DIETb3.math"> Lec9-DIET-b3-801.math </a> 
+	</li>
+
+   	<li> 
+		Reading material: 
+			<ul>
+				<li> Chapter 29 of Introduction to Algorithms, </li>
+				<li> Combinatorial optimization: algorithm and complexity. </li>
+				<li> <a href="https://books.google.com/books?hl=en&lr=&id=9lSVFzsTGWsC&oi=fnd&pg=PA13#v=onepage&q&f=false"> On the theory of games of strategy (by John von Neumann, 1928) </a>, </li>
+				<li> <a href="http://www.cs.uu.nl/docs/vakken/msagi/Nash51.pdf"> Non-Cooperative Games (by John Nash, 1951) </a>, </li>
+				<li> <a href="https://link.springer.com/referenceworkentry/10.1007%2F978-1-4614-1800-9_209#page-1"> Zero-sum Two-person Games (by T. E. S. Raghavan, 1994) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/KKT-examples.pdf"> KKT Examples (by Stanley B. Gershwin) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/KKT-applications.pdf"> KKT conditions and applications  (by Michel Baes) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Duality-and-KKT.pdf"> Duality and KKT conditions (by S. Cui) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec9-Slater1950.pdf"> Lagrangian Multipliers Revisited (by Morten Slater, 1950) </a>, </li>
+				<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/LagrangeRelaxationFisher.pdf"> The Lagrangian Relaxation Method for Solving Integer Programming Problems (by Marshall Fisher, 2004) </a>, </li>
+				<li> <a href="http://www2.math.uu.se/fmb/courseinfo_opt/Lagrange.pdf"> Lagrange relaxation and KKT conditions () </a>, </li>
+			<li> <a href="http://ishare.iask.sina.com.cn/f/22280903.html?from=like"> Applied integer programming --- modelling and solution </a> </li> 
+			</ul>
+	 </li>
+   
+   	<!--li>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment5.pdf"></a> 
+   	</li-->
+   </ul>
+   </li>
+
+	
+ <p>	
+
+   <li> Week 12, 13: Network flow
+   <ul> 	
+   	<li>
+   		Lecture 10: Network flow and its applications;
+   		<br>
+   		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10.pdf"> Lec10.pdf </a>, 
+		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Applications.pdf"> Network-flow applications </a>,
+		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-demo-FF.ppt"> demo of Ford-Fulkerson algorithm </a>,
+		<!--a href="http://bioinfo.ict.ac.cn/%8Edbu/AlgorithmCourses/Lectures/Lec10-demo-FF-multiple-solution.ppt"> Multiple optimal solutions </a-->,
+		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-demo-Edmonds-Karp.ppt"> demo of Edmonds-Karp algorithm </a>,
+		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-demo-Dinic.ppt"> demo of Dinic algorithm </a>,
+		<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-demo-Irrational-Capacity.ppt"> Irrational capacities might lead to endless iterations  </a>,
+	</li>	
+
+   	<li> Reading material: 
+		<ul>
+			<li> Chapter 26 of Introduction to Algorithms, </li>
+			<li> Chapter 7 of Algorithm design, Combinatorial optimization: algorithm and complexity, </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-history-networkflow.pdf"> Network-flow research history (by A. Schrijver) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/FordFulkerson1956.pdf"> Maximal flow through a network (by L. R. Ford Jr. and D. R. Fulkerson, 1956) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-MaxFlow-Efficient-Algorihtms-Goldberg2014.pdf"> Efficient
+Maximum
+Flow
+Algorithms (by Andrew V. Goldberg, and Robert Tarjan, 2014) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-MaxFlow-Karzanov1973.pdf"> The exact time bound for a maximum flow algorithm applied to a set of representative problems (by A. Karzanov, 1973) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-MaxFlow-Karzanov1974.pdf"> Determining the maximal flow in a network by the method of preflows (by A. Karzanov, 1974) </a>,  </li>
+			<li> <a href="https://www.researchgate.net/publication/230837862_Determining_the_maximal_flow_in_a_network_by_the_method_of_preflows"> Determinining the maximal flow in a network by the method of preflows (by A. Karzanov, 1974) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dinic1970.pdf"> Algorithm for solution of a problem of maximum flow in a network with power estimation (by E. A. Dinic, 1970) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-MaxFlow-Scaling-MinCostFlow-Ahuja1992.pdf"> Finding minimum-cost flows by double scaling (by R. A. Ahuja, A. V. Goldberg, J. B. Orlin, and R. E. Tarjan, 1992) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Dinitz2006.pdf"> Dinitz' Algorithm: The Original Version and Even's Version (by Yefim Dinitz, 2006) </a>,  </li>
+			<li> <a href="http://dl.acm.org/citation.cfm?id=115998"> Finding disjoint paths in networks (by D. Sidhu, R. Nair, and S. Abdallsh, 1991) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/EdmondsKarp1972.pdf"> Theoretical Improvements in Algorithmic Efficiency for Network Flow Problems (by Jack Edmonds and Richard M. Karp, 1972) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/GoldbergTardosTarjan1990.pdf"> Network Flow Algorithms (Andrew V.Goldberg, Eva Tardos and Robert E. Tarjan, 1990) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Edmonds1964.pdf"> Maximum Matching and a Polyhedron With O,1-Vertices1 Jack Edmonds (by Jack Edmonds, 1964) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/PathsTreesAndFlowers.pdf"> Paths, Trees and Flowers  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Edmonds1965.pdf"> Paths, Trees and Flowers (by Jack Edmonds, 1965) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Maximum-Weighted-Matching-Scaling2.pdf"> Faster scaling algorithms for general graph matching problems (by H. N. Gabow, R. Tarjan, 1991) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Maximum-Weighted-Matching-Scaling.pdf"> A Scaling Algorithm for Maximum Weight Matching in Bipartite Graphs (by Ran Duan, Hsin-Hao Su, 2012) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Maximum-Weighted-Matching-Zvi.pdf"> Efficient Algorithms for Finding Maximal Matching in Graphs (by Zvi Galil, 1983) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Maximum-Weighted-Matching-Approaximation.pdf"> Linear-Time Approximation for Maximum Weight Matching(by Ran Duan, Seth Pettie, 2014) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Maximum-Weighted-Matching-Duality.pdf"> Max-Product for Maximum Weight Matching:
+			Convergence, Correctness, and LP Duality (by Mohsen Bayati, Devavrat Shah, and Mayank Sharma, 2008) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Klein1967.pdf"> A Primal Method for Minimal Cost Flows with Applications to the Assignment and Transportation Problems (by Morton Klein, 1967) </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Orlin2012.pdf"> Max flows in O(nm) time, or better (by James Orlin, 2012) </a>,  </li>
+			<li> <a href="http://www.ams.org/samplings/feature-column/fcarc-trees"> Trees: A Mathematical Tool for All Seasons, including History of algorithms to find minimum cost spanning trees (by Joe Malkevitch) </a> </li> 
+			<li> <a href="http://www.amazon.com/Years-Integer-Programming-1958-2008-State/dp/3540682740"> 50 Years of Integer Programming 1958-2008: From the Early Years to the State-of-the-Art, Springer, 2010 (Edited by M. Juenger, T. M. Kiebling, D. Naddef, G. L. Nemhauser, W. R. Pulleyblank, G. Reinelt, G. Rinaldi, and L. A. Wolsey) </a> </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/GoldbergTarjan1987.pdf"> Finding minimum-cost circulations by successive approximation ( by Andrew V. Goldberg, Robert E. Tarjan, 1987)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Kolomogorov2004.pdf"> What energy functions can be minimized via graph cuts (by  Vladimir Kolmogorov, Ramin Zabih, 2004)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Polyhedrals-AlexanderSchrijver.pdf">  Polyhedral Combinatorics and Combinatorial Optimization (by Alexander Schrijver)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Berge1957.pdf"> Two theorems in graph theory (by Clauder Berge, 1957)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/HopcroftKarp1973.pdf"> An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs (by J. Hopcroft, and R. Karp, 1973)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Hall1935.pdf"> On representatives of subsets (by P. Hall, 1935)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-Primal-Method.pdf"> A Primal Method for the Assignment and Transportation Problems (by M. L. Balinski and R. E. Gomory, 1964)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-HungarianMethod-Kuhn.pdf"> The Hungarian Method for the Assignment Problem (by H. W. Kuhn, 1955)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-HungarianMethod-Variants.pdf"> Variants of The Hungarian Method for  Assignment Problems (by H. W. Kuhn, 1956)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-history-of-CO-till1960.pdf"> On the history of combinatorial optimization (by Alexander Schrijver, 2005)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-from-the-origin.pdf"> Jen¨o Egerv´ary: from the origins of the Hungarian algorithm to satellite communication (by Silvano Martello, 2009)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-Egervary-Eng.pdf"> On combinatorial properties of matrices (by Jeo Egervary, 1931, Translated by H. Kuhn)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-vonNeumann1.pdf"> Solutions of games by differential equations (by G. W. Brown, von Neumann, In: H. W. Kuhn and A. W. Tucker, Eds., Contributions to the Theory of Games I, Princeton University Press, Princeton, 1950)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec10-Matching-vonNeumann2.pdf"> A certain zero-sum two-person game equivalent to the optimal assignment problem (by von Neumann, In: H. W. Kuhn and A. W. Tucker, Eds., Contributions to the Theory of Games I, Princeton University Press, Princeton, 1950)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Munkres1957.pdf"> Algorithms for the assignment and transportation problems (by James Munkres, 1957)  </a>,  </li>
+			<li> <a href="http://web.eecs.umich.edu/~pettie/matching/"> A bibliography of graph matching (by Seth Pettie)  </a>,  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/JiangTao2013.pdf"> Differential gene expression analysis using coexpression and RNA-Seq data (by Tao Jiang et al. 2013)  </a>,  </li>
+		</ul>
+	 </li>
+   	<!--li>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment6.pdf"></a> 
+   	</li-->
+	
+   </ul>
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> Week 14, 15: Problem intrinsic property: Hardness
+      <ul>
+      <li>
+   Lecture 11:  Problem hardness: Polynomial-time reduction;
+      <br> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec3.pdf"> Lec3.pdf </a> 
+      </li>
+   	<li> 
+	Reading material: 
+	<ul>
+		<li> Computer and intractability, </li>
+		<li>Chapter 8 of Algorithm design, </li>
+		<li>Chapter 34 of Introduction to Algorithms </li>
+   		<li><a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Karp1972.pdf"> Reducibility among combinatorial problems (by R. M. Karp, 1972) </a>, <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/Karp1972ppt.pdf"> slides  </a> </li> 
+		<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Adleman1994.pdf"> Molecular Computation of Solutions to Combinatorial Problems (by Leonard M. Adleman, 1994)</a>,  </li>
+		<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Adleman1998.pdf"> Computing with DNA (by Leonard M. Adleman, 1998)</a>,  </li>
+		<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/ComputerInATestTube.pdf"> Computer in a testtube (by Hendrik Jan Hoogeboom, 2010)</a>,  </li>
+		<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Pavel2011.pdf"> How to apply de Bruijn graphs to genome assemly (by Phillip E. C. Compeau, Pavel A. Pevzner, and Glenn Tesler, 2011)</a>,  </li>
+	</ul>
+	</li> 	
+      </ul>
+   </li>
+	
+	
+ <p>	
+
+   <li> Week 14, 15: NP-Completeness 
+   <ul> 
+      <li>
+      Lecture 12: NP-Hard problems: packing problem, covering problems, 
+      sequencing problem, partitioning, coloring, SAT, numbering problems, etc.
+      <br> 
+	  <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec4.pdf"> Lec4.pdf </a>, <a href="http://202.116.45.236/uploads/soft/duomeiti/flash/5/images/5.swf"> Turing machine demo (by Zhen Ji) </a>, <a href="http://www.turing.org.uk/turing/scrapbook/tmjava.html"> Turing machine demo (by Andrew Hodges</a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec4-TuringMachine.pdf"> Turing machine (by K. Wayne) </a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec4-Computability.pdf"> Computability (by K. Wayne) </a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec4-2SAT.ppt"> 2SAT is in P (by D. Moshko ) </a>, 
+      </li>
+	
+   <li> 
+	Reading material: 
+	<ul>
+		<li> Computer and intractability, </li>
+		<li>Chapter 8 of Algorithm design, </li>
+		<li>Chapter 34 of Introduction to Algorithms </li>
+   		<li><a href="http://4mhz.de/cook.html"> The complexity of theorem-proving procedures (by Stephen A. Cook, 1971)</a>
+		<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/PNP.pdf"> The P versus NP problem (by Stephen Cook)</a>,  </li>
+   		<li><a href="http://www.csc.kth.se/%7Eviggo/wwwcompendium/"> A compendium of NP optimization problems (Edited by Pierluigi Crescenzi, Viggo Kann, M. Halldorsson, M. Karpinski, and G. Woeinger)</a> </li> 
+	</ul>
+   </li>
+      <!--li>
+      <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Assignments2012/assignment7.pdf"></a> 
+      </li-->
+   </ul>
+   </li>
+
+	
+ <p>	
+
+   <li> Week 16, 17: Solving hard problems: approximation and randomization 
+   <ul>
+   <li>
+  	 Lecture 11: Approximation algorithm: a brief introduction; 
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec11.pdf"> Lec11.pdf </a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec11-k-center.pdf"> Parametric pruning algorithm for K-Center problem (by P. Potikas) </a>, 
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec11-SetCover-Primal.math"> Lec11-SetCover-Primal.math </a>,
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec11-SetCover-Dual.math"> Lec11-SetCover-Dual.math </a>,
+<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec11-MakeSpan.math"> Lec11-MakeSpan.math </a>,
+   </li>
+	
+   <li> 
+	Reading material: 
+		<ul>
+			<li> Chapter 35 of Introduction to Algorithms, </li>
+			<li> Chapter 11 of Algorithm design, </li>
+			<li> Approximation algorithm by V. Vazirani. </li>
+			<li>	<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Branch-and-bound-algorithms.pdf"> Branch and bound algorithms --- priciples and examples (by Jens Clausen, 1999) </a></li>
+			<li> <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec12-Parameterized-Complexity-and-Approximation-Algorithm.pdf"> Parameterized complexity and approximation algorithms (by Daniel Marx, 2005) </a> </li>
+			<li> <a href="http://www.stanford.edu/~rrwill/cs266.html"> CS266 -- Parameterized Algorithms and Complexity (by Ryan Williams, 2013) </a> </li>
+			<li> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.4638&rep=rep1&type=pdf"> Invitation to parameterized algorithms (by Rolf Niedermeier, 2002) </a> </li>
+		</ul>
+   </li>
+	
+   <li>
+   <a href="http://www.bioinfo.org.cn/~wangchao/maa/assignment8.2014_2015.pdf">Assignment 8</a> 
+   </li>
+   <li>
+   <a href="http://www.bioinfo.org.cn/~wangchao/maa/assignment8.2014_2015.hint.pdf">Hint of Assignment 8</a> 
+   </li>
+   </ul>
+   </li> 
+
+ 	
+  
+	
+ <p>	
+
+   <li> Week 18: Solving hard problems: approximation and randomization 
+   <ul>
+   <li>
+   	Lecture 12: Randomized algorithm: a brief introduction;
+   <br>
+   	<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec12.pdf"> Lec12.pdf </a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec12-Hashing.ppt"> Hashing (by K. Wayne) </a>
+   </li>
+
+   <li> 
+	Reading material: 
+		<ul>
+			<li> Chapter 35 of Introduction to Algorithms, </li>
+			<li> Chapter 13 of Algorithm design, </li>
+			<li> Randomized Algorithm by R. Motwani and P. Raghavan. </li>
+			<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Raghavan.pdf"> Randomized algorithms (by P. Raghavan) </a>,
+			<a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Karger1992.ps"> Global Min-cuts in RNC, and other ramifications of a simple min-cut algorithm (by David R. Karger, 1992) </a>,
+		</ul>
+	 
+   </li>
+	
+   </ul>
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> 
+   Week 19: Solving hard problems: special cases and heuristics
+   <ul>
+
+   <li>
+   Lecture 13: Extending limits of tractability;
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec13.pdf"> Lec13.pdf </a>, <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourse/Lectures/XuJinbo2005.ppt"> TreePack: rapid side-chain prediction using tree-decomposition </a>
+   <br>
+   </li>
+
+   <li> Reading material: 
+		<ul>
+			<li> Chapter 10 of Algorithm design, </li>
+			<li> lectures by D. P. Williamson.  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/XuJinbo2005.pdf"> Rapid side-chain prediction via tree decomposition (by Jinbo Xu, 2005) </a>, </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/XuYing2000.pdf"> Protein Threading using PROSPECT:
+			Design and Evaluation (by Ying Xu and Dong Xu, 2000) </a>, </li>
+		</ul>
+   </li>
+	
+   <li>
+   Lecture 14: Heuristics (local search strategy); 
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec14-local-search-all.ppt"> Lec14 Local Search (by K. Wayne) </a> 
+   </li> 
+
+   <li> Reading material: 
+		<ul>
+			<li> Chapter 11 of Algorithm design, </li>
+			<li> Combinatorial optimization: algorithm and complexity. </li>
+		</ul>
+   </li>
+
+   <!---
+   <li>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/assignment10.pdf"> Assignment 10 </a> 
+   </li>
+	
+   </ul>
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> Week 13: String matching problem, Selection problem, and Paging problem.   
+   <ul>
+	
+   <li>
+   Lecture 15: Selection problem: linear deterministic algorithm, randomized divide-and-conquer algo, and random sampling;
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec15.pdf"> Lec15.pdf  </a>, <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec15-Selection-Methods-Floyd-Reviest-Blum.pdf"> Two papers on the selection problem (by BFPRT, and FR) </a>
+   <br>
+   </li>
+	
+   <li>
+   Lecture 16: Cache paging problem: FF, LRU, and randomized algo; 
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec16.pdf"> Lec16.pdf  </a> 
+   <br>
+   </li>
+	
+   <li>
+   Lecture 17: String matching problem: DFA, KMP method, randomized finger-print, and Karp-Rabin algo; 
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec17.pdf"> Lec17.pdf  </a> 
+   <br>
+   </li>
+	
+   </ul>
+   </li>
+	
+	
+	
+	
+ <p>	
+
+   <li> Week 14: Closest string and substring problem, Bi-clustering problem, Randomization algorithms
+   <ul>
+	
+   <li>
+   Lecture 18: Closest string and substring problems: random rounding and random sampling;  
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec18.pdf"> Lec18.pdf  </a> 
+   <br>
+   </li>
+	
+   <li>
+   Lecture 19: Bi-Clustering problem: random rounding, a new random sampling idea; 
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec19.pdf"> Lec19.pdf  </a> 
+   <br>
+   </li>
+	
+   </ul>
+	
+   </li>
+	
+	
+	
+ <p>	
+
+   <li> Week 15: MaxCut problem 
+	
+   <ul>
+   <li>
+   Lecture 20: MaxCut problem: Hardness, Local search algorithm, randomization algorithm, derandomization, and SDP approach; 
+	
+   <br>
+   <a href="http://bioinfo.ict.ac.cn/%7Edbu/AlgorithmCourses/Lectures/Lec20.pdf"> Lec20.pdf </a>
+   </li>
+	
+   <li> Reading material: 
+		<ul>
+			<li> Lectures by D. P. Williamson.  </li>
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/SDP_Folyd_1996.pdf"> Semidefinite programming (by LIEVEN VANDENBERGHEt AND STEPHEN BOYD, 1996)</a>, </li> 
+			<li> <a href="http://bioinfo.ict.ac.cn/~dbu/AlgorithmCourses/Lectures/SDPFreund.pdf"> Introduction to semidefinite programmin (by R. Freund) </a>, </li>
+		</ul>
+   </li>
+   </ul>
+   </li>
+
+   ---------------------------------------------------------------------------!>
+   </ul>
+	
+<h5> Powered by Loongson CPU <img src="http://bioinfo.ict.ac.cn/~dbu/dbu_files/Loongson_logo.png" alt="" border="0" height="50" width="50"><img src="http://bioinfo.ict.ac.cn/~dbu/dbu_files/Loongson2C.jpg" alt="" border="0" height="50" width="50">. Loongson is a CPU developed at Institute of Computing Technology, Chinese Academy of Sciences. </h5>
+</body>
+</html>
+
+
+</body>
+</html>
