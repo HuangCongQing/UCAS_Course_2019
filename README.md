@@ -4,10 +4,10 @@
  * @Company(School): UCAS
  * @Date: 2019-10-18 01:26:57
  * @LastEditors: HCQ
- * @LastEditTime: 2019-10-18 03:36:33
+ * @LastEditTime: 2019-10-18 03:36:50
  -->
 # UCAS_Course_2019
-中国科学院大学2019课程（秋季，春季，夏季）
+中国科学院大学2019课程（秋季，春季，夏季）PPT
 
 ### 秋季课程
 
