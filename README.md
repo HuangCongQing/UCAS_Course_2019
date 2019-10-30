@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Date: 2019-10-18 01:26:57
  * @LastEditors: HCQ
- * @LastEditTime: 2019-10-25 16:22:08
+ * @LastEditTime: 2019-10-30 23:39:18
  -->
 # UCAS_Course_2019
 中国科学院大学2019课程（秋季，春季，夏季）PPT
@@ -42,3 +42,6 @@
 
 * [mohuangrui/*ucasproposal*](https://github.com/mohuangrui/ucasproposal)
 中国科学院大学开题报告 LaTeX 模板 LaTeX Proposal Template for the University of Chinese Academy of Sciences
+
+* [univeryinli/ucas-ppt2019](https://github.com/univeryinli/ucas-ppt) 
+中国科学院大学 国科大课件ppt，主要课程为模式识别，深度学习，高级人工智能
