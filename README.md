@@ -4,10 +4,14 @@
  * @Company(School): UCAS
  * @Date: 2019-10-18 01:26:57
  * @LastEditors: HCQ
- * @LastEditTime: 2019-10-30 23:39:18
+ * @LastEditTime: 2019-11-07 01:34:21
  -->
 # UCAS_Course_2019
 中国科学院大学2019课程（秋季，春季，夏季）PPT
+
+
+* 下载github仓库部分文件夹：http://downgit.zhoudaxiaa.com/
+下载github文件夹粘贴入DownGit中，选择download即可;
 
 ### 秋季课程
 
