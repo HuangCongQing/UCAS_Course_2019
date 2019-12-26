@@ -1,0 +1,27 @@
+f(x, y ) = 2*x + 1.5*y
+f1(x, y) = -( 12*x + 24*y -120) 
+f2(x, y) = -( 16*x + 16*y - 120 )
+f3(x, y) = -( 30*x + 12*y - 120 )
+f4(x, y) = x - 15
+f5(x, y) = y-15
+f6(x,y) = - x 
+f7( x, y) = -y 
+t=100
+set contour
+set cntrparam levels 20
+set isosample 50
+splot [0:15] [y=0:15] f(x,y) - t*( log( -f1(x,y) ) + log( -f2(x,y) ) + log( -f3(x,y) ) + log( -f4(x,y) ) + log( -f5(x,y) ) + log( -f6(x,y) ) + log( -f7(x,y) ) )
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
+pause  mouse
