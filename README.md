@@ -3,8 +3,8 @@
  * @Author: HCQ
  * @Company(School): UCAS
  * @Date: 2019-10-18 01:26:57
- * @LastEditors: HCQ
- * @LastEditTime: 2019-12-07 11:07:18
+ * @LastEditors  : HCQ
+ * @LastEditTime : 2019-12-28 20:20:31
  -->
 # UCAS_Course_2019
 中国科学院大学2019课程（秋季，春季，夏季）PPT
@@ -35,7 +35,7 @@
 
 
 
-### More Reference
+### 往届参考
 
 * [usiege](https://github.com/usiege)/**[Exercise](https://github.com/usiege/Exercise)**
 国科大课程资料与练习 [http://sep.ucas.ac.cn/](http://sep.ucas.ac.cn/)
