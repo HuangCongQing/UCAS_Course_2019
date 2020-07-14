@@ -4,10 +4,11 @@
  * @Company(School): UCAS
  * @Date: 2019-10-18 01:26:57
  * @LastEditors: HCQ
- * @LastEditTime: 2020-07-14 10:12:32
+ * @LastEditTime: 2020-07-14 10:17:06
  -->
 # UCAS_Course_2019
 @[双愚](https://github.com/HuangCongQing/UCAS_Course_2019)整理
+
 中国科学院大学2019课程（秋季，春季，夏季）PPT
 
 
