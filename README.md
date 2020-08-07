@@ -12,8 +12,8 @@
 中国科学院大学2019课程（秋季，春季，夏季）PPT
 
 
-* 下载github仓库部分文件夹
-Chrome浏览器，安装 单个文件夹下载插件 GitZip for Github。
+* 下载github仓库部分文件夹：
+安装 单个文件夹下载的Chrome浏览器插件 GitZip for Github。
 
 ### 秋季课程
 
