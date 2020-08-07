@@ -13,7 +13,7 @@
 
 
 * 下载github仓库部分文件夹：
-安装 单个文件夹下载的Chrome浏览器插件 GitZip for Github。
+安装 单个文件夹下载的Chrome浏览器插件 [GitZip for Github](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
 
 ### 秋季课程
 
