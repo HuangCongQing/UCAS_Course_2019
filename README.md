@@ -22,7 +22,7 @@
     * https://www.bilibili.com/video/av79954786
 
 * [x]  [计算机算法设计与分析19-20秋季](./计算机算法设计与分析19-20秋季)
-    * [「计算机算法设计与分析」卜东波 | 哔哩哔哩视频](https://www.bilibili.com/video/av68436805/?spm_id_from=333.788.videocard.1)
+    * [「计算机算法设计与分析」卜东波 | 哔哩哔哩视频](https://www.bilibili.com/video/BV1aJ411D7ma)
 
 * [x] [模式识别19-20秋季](./模式识别19-20秋季)
     * 视频：https://www.bilibili.com/video/av81269078
