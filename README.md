@@ -7,7 +7,7 @@
  * @LastEditTime: 2020-07-15 00:40:23
  -->
 # UCAS_Course_2019
-@[双愚](https://github.com/HuangCongQing/UCAS_Course_2019)整理
+@[双愚](https://github.com/HuangCongQing/UCAS_Course_2019)整理，本仓库只是为方便同学资料查找和学习，严禁商用！
 
 中国科学院大学2019课程（秋季，春季，夏季）PPT
 
