@@ -15,6 +15,10 @@
 * 下载github仓库部分文件夹：
 安装 单个文件夹下载的Chrome浏览器插件 [GitZip for Github](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
 
+
+* [献给雁栖湖校区国科大研一新生的不成熟小建议](https://zhuanlan.zhihu.com/p/405322953)
+
+
 ### 秋季课程
 
 * [x] [高级人工智能19-20秋季](./高级人工智能19-20秋季)
